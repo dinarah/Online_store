@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="OnlineShop">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>OnlineShop</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Spinnaker|Ubuntu' rel='stylesheet' type='text/css'>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+     <link href="css/ngDialog.min.js" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <script src="js/angular.min.js"></script>
+    <script src=" //code.angularjs.org/1.5.2/angular-route.min.js"></script>
+     <script src="js/angular-ui-router.min.js"></script> 
+      <script src="js/app.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/lodash.js"></script>
+      <script src="https://cdn.rawgit.com/snapjay/ngCart/0.0.3-rc.2/dist/ngCart.js"></script>
+     <script src="js/ngDialog.min.js"></script>
+   
+    
+</head>
+
+
+
+<body>
+
+    <div class="container">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="navbar-header">
+
+                    </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand brandName" href="#/home">Biju For You</a>
+
+                    <div class="navbar-collapse collapse" ng-controller="TabController as tab">
+                        <section ng-init="tab= tab.isSelected"> 
+                        <ul class="nav pull-center navbar-nav menu" role="tablist">
+                            <li ng-class="{ active: tab.isSelected(1) }" class="li">
+                                <a ng-click="tab.selectTab(1)" href="#/home">HOME</a>
+                            </li>
+
+                            <li ng-class="{ active: tab.isSelected(2) }" class="li">
+                                <a ng-click="tab.selectTab(2)" href="#/shop">SHOP</a>
+                            </li>
+
+                            <li ng-class="{ active: tab.isSelected(3) }" class="li">
+                                <a ng-click="tab.selectTab(3)" href="#/customercare">CUSTOMER CARE</a>
+                            </li>
+
+                            <li ng-class="{ active: tab.isSelected(4) }" class="li">
+                                <a ng-click="tab.selectTab(4)" href="#/blog">BLOG</a>
+                            </li>
+
+                            <li ng-class="{ active: tab.isSelected(5) }" class="li">
+                                <a ng-click="tab.selectTab(5)" href="#/aboutus">ABOUT US</a>
+                            </li>
+
+                        </ul>
+                        </section>
+            <a href="#/store"> <i class="fa fa-shopping-bag fa-2x" id="glyph"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+  
+
+ </div>
+    <div class="container-fluid">
+            <div class="row">
+                <div ui-view></div>
+            </div>
+        </div>
+    
+    <footer class="footer navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div id="footerBrand"> <span>Biju For You
+          </span></div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footerCustomer"> <span>CUSTOMER CARE</span>
+                        <a href="#" class="customerLink">Shipping Policy</a>
+                        <a href="#" class="customerLink">Returns Policy</a>
+                        <a href="#" class="customerLink">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footerCustomer"> <span>VISIT OUR STORE</span>
+                        <address class="customerLink">
+  
+  4565 High Street<br>
+  San Francisco, CA 947603<br>
+</address>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footerCustomer">
+
+                        <span>STAY CONNECTED</span></div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <p class="footerParagraph">2016 by Biju For You</p>
+    </footer>
+   
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="https://cdn.rawgit.com/snapjay/ngCart/0.0.3-rc.2/dist/ngCart.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>
