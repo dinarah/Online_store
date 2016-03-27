@@ -276,7 +276,8 @@ margin-bottom: 50px;
     height:70px;
 }
 .btn-sm {
-    background-color: rgba(48,49,50,1);
+   /*background-color: rgba(48,49,50,1);*/
+    background-color: rgba(255,49,50,1);
     font-size:15px;
     border-style: solid;
      border-color: #FDFDFD;
