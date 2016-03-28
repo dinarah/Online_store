@@ -1,23 +1,24 @@
 <div ng-controller="ProductController as product" class="container center" id="productPage">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
                 <img ng-src="{{product.item.images[0].full}}" class="imgproduct" />
 
                 <p>{{product.item.description}}</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4 productCol">
                 <h1 class="ProductName">{{product.item.name}}</h1>
                 <h4>{{product.item.price | currency}}</h4>
                 <ngcart-addtocart id="{{product.item.name}}" name="{{product.item.name}}" price="{{product.item.price}}">ADD TO CART</ngcart-addtocart>
-                <p>PRODUCT INFO
-                    <br> I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty.</p>
-                <p>RETURN AND REFUND POLICY
-                    <br> I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.
+                <h3 class="productInfo">PRODUCT INFO</h3>
+                <p> I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty.</p>
+                <h3 class="productInfo">RETURN AND REFUND POLICY</h3>
+                <p> I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.
                 </p>
 
 
             </div>
-
+ <div class="col-md-1"></div>
         </div>
 
     </div>

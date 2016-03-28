@@ -12,6 +12,7 @@ body {
  
 }
 
+
 #topContainer {
     background-image: url("../images/nice_4-wallpaper-1680x1050.jpg");
     height: 750px;
@@ -38,6 +39,17 @@ body {
     font-family: "Spinnaker", sans-serif;
     font-weight: 200;
     color: rgb(229, 215, 215);
+    transition-property: color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.transition {
+    color: rgb(229, 215, 215);
+    transition-property: color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 .navbar-inverse { 
     background-repeat: no-repeat;
@@ -50,9 +62,13 @@ body {
     display: inline-block;
     margin-left: 30px;
     margin-right: 30px;
-     font-family: "Spinnaker", sans-serif;
+    font-family: "Spinnaker", sans-serif;
     font-weight: 400;
     color: rgb(229, 215, 215);
+    transition-property: color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 .h2 {
@@ -221,9 +237,9 @@ img {
     background-color: rgb(49,49,49);
     width: 226px;
     border-radius: 0 !important;
-    border-color: none;
-  
+    border-color: none;  
 }
+
 .checkout {
     margin-bottom: 70px;
 }
@@ -271,28 +287,54 @@ margin-bottom: 50px;
     margin-bottom: 50px;
     margin-top: 70px;
 }
-.BuyButton {
-    width:100px;
-    height:70px;
-}
+
 .btn-sm {
-   /*background-color: rgba(48,49,50,1);*/
-    background-color: rgba(255,49,50,1);
+    background-color: rgba(48,49,50,1);
     font-size:15px;
     border-style: solid;
-     border-color: #FDFDFD;
+    border-color: #FDFDFD;
     margin-bottom: 25px;
     margin-top: 25px;
     width:355px;
     height: 51px;
     text-align: center;
+    font-weight: 400;
     padding: 15px 20px;
 }
-.btn-primary:hover {
-   color:aliceblue;
+.btn-sm:hover {
+   color: white !important;
 }
 .ProductName {
    margin-top: 0px;
    font-size: 22px;
    margin-bottom: 25px;
+}
+.productInfo {
+    font-weight:400;
+    font-size: 15px;
+}
+.productCol {
+    margin-left: 50px;
+}
+a {
+  
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover 
+{
+     color: rgba(48,49,50,1); 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+a:active {
+    color: rgb(157,157,157);
+}
+.name {
+    font-size:20px;
+    margin-top: 10px;
+}
+.chunk {
+    margin-top: 20px;
 }

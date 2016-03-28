@@ -15,10 +15,10 @@
         <h3 class="look">NEW COLLECTION</h3> </div>
         <div ng-controller="StoreController as store">
             <div ng-repeat="chunk in store.items" class="row">
-                <div ng-repeat="item in chunk" class="col-sm-3">
+                <div ng-repeat="item in chunk" class="col-sm-3 chunk">
                    <a href="#/product/{{item.sku}}"><img ng-src="{{item.images[0].full}}"  class="img" /></a>
                    
-                    <a href="#/product/{{item.sku}}"><b>{{item.name}}</b></a><br/>
+                    <a href="#/product/{{item.sku}}"><h4 class="name">{{item.name}}</h4></a>
                     <p>{{item.price | currency}}</p>
                    
                 </div>

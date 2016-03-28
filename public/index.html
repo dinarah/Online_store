@@ -61,23 +61,23 @@
                         <section ng-init="tab= tab.isSelected"> 
                         <ul class="nav pull-center navbar-nav menu" role="tablist">
                             <li ng-class="{ active: tab.isSelected(1) }" class="li">
-                                <a ng-click="tab.selectTab(1)" href="#/home">HOME</a>
+                                <a ng-click="tab.selectTab(1)" href="#/home" class="transition">HOME</a>
                             </li>
 
                             <li ng-class="{ active: tab.isSelected(2) }" class="li">
-                                <a ng-click="tab.selectTab(2)" href="#/shop">SHOP</a>
+                                <a ng-click="tab.selectTab(2)" href="#/shop" class="transition">SHOP</a>
                             </li>
 
                             <li ng-class="{ active: tab.isSelected(3) }" class="li">
-                                <a ng-click="tab.selectTab(3)" href="#/customercare">CUSTOMER CARE</a>
+                                <a ng-click="tab.selectTab(3)" href="#/customercare" class="transition">CUSTOMER CARE</a>
                             </li>
 
                             <li ng-class="{ active: tab.isSelected(4) }" class="li">
-                                <a ng-click="tab.selectTab(4)" href="#/blog">BLOG</a>
+                                <a ng-click="tab.selectTab(4)" href="#/blog" class="transition">BLOG</a>
                             </li>
 
                             <li ng-class="{ active: tab.isSelected(5) }" class="li">
-                                <a ng-click="tab.selectTab(5)" href="#/aboutus">ABOUT US</a>
+                                <a ng-click="tab.selectTab(5)" href="#/aboutus" class="transition">ABOUT US</a>
                             </li>
 
                         </ul>
@@ -94,7 +94,8 @@
  </div>
     <div class="container-fluid">
             <div class="row">
-                <div ui-view></div>
+             <ui-view autoscroll='true'/>
+       
             </div>
         </div>
     
@@ -107,9 +108,9 @@
                 </div>
                 <div class="col-lg-2">
                     <div class="footerCustomer"> <span>CUSTOMER CARE</span>
-                        <a href="#" class="customerLink">Shipping Policy</a>
-                        <a href="#" class="customerLink">Returns Policy</a>
-                        <a href="#" class="customerLink">Contact Us</a>
+                        <a href="#/customercare" class="customerLink">Shipping Policy</a>
+                        <a href="#/customercare" class="customerLink">Returns Policy</a>
+                        <a href="#/aboutus" class="customerLink">Contact Us</a>
                     </div>
                 </div>
                 <div class="col-lg-2">

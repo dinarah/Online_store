@@ -101,7 +101,8 @@ function getProductBySku(sku)
 // test comment
 var app = angular.module('OnlineShop', ['ui.router', "store", "myApp", 'ngCart']);
 
-app.config(function ($stateProvider, $urlRouterProvider) {
+
+app.config(function ($stateProvider, $urlRouterProvider, $rootScope) {
 
     $urlRouterProvider.otherwise('/home');
 
@@ -172,4 +173,9 @@ app.controller('TabController', function () {
     this.isSelected = function (checkTab) {
         return this.tab === checkTab;
     };
+});
+$rootScope.$on("$routeChangeSuccess", function (event, currentRoute, previousRoute) {
+
+    window.scrollTo(0, 0);
+
 });
