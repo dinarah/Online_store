@@ -1,25 +1,18 @@
 <div ng-controller="myCtrl">
- <div class="container">
-    <div class="row">
-        <div class="col-xs-offset-8 col-xs-4">
-            <h3>My Cart<span></span></h3>
-
-            <ngcart-summary></ngcart-summary>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-offset-8 col-xs-4">
+                <h3>My Cart<span></span></h3>
+                <ngcart-summary></ngcart-summary>
+            </div>
         </div>
     </div>
-</div>
-
     <hr/>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h3>My Cart<span></span></h3>
-
                 <ngcart-cart></ngcart-cart>
-
-               
-
-
                 <div class="row">
                     <div class="col-xs-4">
                     </div>
@@ -27,16 +20,11 @@
                         <ngcart-checkout service="log">Checkout</ngcart-checkout>
                     </div>
                     <div class="col-xs-4 checkout">
-                        
                         <ngcart-checkout service="paypal" settings="payPalSettings"></ngcart-checkout>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
-
     </div>
 </div>
 
@@ -47,30 +35,24 @@
 
 <script type="text/ng-template" id="template/ngCart/summary.html">
     <div class="row">
-
         <div class="col-md-6">{{ ngCart.getTotalItems() }}
             <ng-pluralize count="ngCart.getTotalItems()" when="{1: 'item', 'other':'items'}"></ng-pluralize>
             <br />{{ ngCart.totalCost() | currency }}
         </div>
     </div>
 </script>
-
-
 <script type="text/ng-template" id="template/ngCart/cart.html">
     <div class="alert alert-warning" role="alert" ng-show="ngCart.getTotalItems() === 0">
         Your cart is empty
     </div>
-
     <div class="table-responsive col-lg-12" ng-show="ngCart.getTotalItems() > 0">
-
         <table class="table table-striped ngCart cart">
-
             <thead>
                 <tr>
                     <th></th>
                     <th></th>
                     <th>Quantity</th>
-                    <th>Amount</th>
+                    <th>Price</th>
                     <th>Total</th>
                 </tr>
             </thead>
@@ -110,35 +92,28 @@
             </tbody>
         </table>
     </div>
-
 </script>
 
 <script type="text/ng-template" id="template/ngCart/addtocart.html">
     <div ng-hide="attrs.id">
         <a class="btn btn-lg btn-primary" ng-disabled="true" ng-transclude></a>
-
     </div>
     <div ng-show="attrs.id">
         <div>
             <span ng-show="quantityMax">
             <select name="quantity" id="quantity" ng-model="q"
                     ng-options=" v for v in qtyOpt"></select>
-        </span>
+            </span>
             <a class="btn btn-sm btn-primary" ng-click="ngCart.addItem(id, name, price, q, data)" ng-transclude></a>
         </div>
-
     </div>
 </script>
 
 <script type="text/ng-template" id="template/ngCart/checkout.html">
-
     <div ng-if="service=='http' || service == 'log'">
         <button class="btn btn-primary" ng-click="checkout()" ng-disabled="!ngCart.getTotalItems()" ng-transclude>Checkout</button>
     </div>
-
-
     <div ng-if="service=='paypal'">
-
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" ng-show="ngCart.getTotalItems()">
             <input type="hidden" name="cmd" value="_xclick">
             <input type="hidden" name="business" value="{{ settings.paypal.business }}">
@@ -155,7 +130,5 @@
             <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </form>
-
     </div>
-
 </script>

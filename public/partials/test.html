@@ -1,1 +1,54 @@
-<p>External modal template with external scope: <code>{{value}}</code></p>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Slide Div Layer Left and Right</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+    $("document").ready(function() {
+
+        // Get the outer height of #picture Div
+        var widthShift = $("#picture").outerWidth();
+
+        $(".slideRight").click(function() {
+
+            if ( $(this).is(".slideRight") ) {
+
+                // Move the curtain to the right by the outer width of #picture Div layer
+                //  in 5 seconds when the button is clicked.
+                $("#picture").animate({ "left": "+=" + widthShift + "px" }, 5000);
+
+                // Toggle the class
+                $(this).toggleClass("slideRight slideLeft")
+
+            } else {
+
+                // Move the curtain to the left by the outer width of #picture Div layer
+                //  in normal speed when the button is clicked.
+                $("#picture").animate({ "left": "-=" + widthShift + "px" });
+
+                // Toggle the class
+                $(this).toggleClass("slideRight slideLeft")
+            }
+
+        });                        
+
+    });
+</script>
+</head>
+
+<body>
+
+<h1>jQuery Animate Div Layer Left and Right</h1>
+
+<div id="frame">
+    <div id="pageContent"></div>
+    <div id="picture"></div>
+</div>
+
+<div style="width:282px; text-align: center; margin-bottom:10px;">
+    <input type="button" class="slideRight" value="Click Here Animate Curtain to Left/Right" />
+</div>
+
+<div style="width:282px; text-align: center"></div>
+</body>
+</html>

@@ -1,10 +1,8 @@
   <div ng-controller="myCtrl">
  <div class="container">
     <div class="row">
-
         <div class="col-xs-offset-8 col-xs-4">
             <h3>My Cart<span></span></h3>
-
             <ngcart-summary></ngcart-summary>
         </div>
     </div>
@@ -16,26 +14,24 @@
         <div ng-controller="StoreController as store">
             <div ng-repeat="chunk in store.items" class="row">
                 <div ng-repeat="item in chunk" class="col-sm-3 chunk">
-                   <a href="#/product/{{item.sku}}"><img ng-src="{{item.images[0].full}}"  class="img" /></a>
-                   
+                   <a href="#/product/{{item.sku}}"><img ng-src="{{item.images[0].thumbnail}}"  class="img" /></a>
                     <a href="#/product/{{item.sku}}"><h4 class="name">{{item.name}}</h4></a>
                     <p>{{item.price | currency}}</p>
-                   
                 </div>
             </div>
         </div>
     </div>
     <div class="container customercare">
-        <h3 class="look">ROCK'N'ROLL</h3> </div>
+        <h3 class="look">ROCK'N'ROLL</h3>
+    </div>
     <hr/>
     <div class="container">
         <div ng-controller="StoreController as store">
             <div ng-repeat="chunk in store.items" class="row">
-                <div ng-repeat="item in chunk" class="col-sm-3">
-                    <img ng-src="{{item.images[0].full}}" class="img" />
-                    <ngcart-addtocart id="{{item.name}}" name="{{item.name}}" price="{{item.price}}">Add to Cart</ngcart-addtocart>
-                    <p>{{item.price | currency}}</p>
-                    
+                <div ng-repeat="item in chunk" class="col-sm-3 chunk">
+                  <a href="#/product/{{item.sku}}"><img ng-src="{{item.images[0].full}}"  class="img" /></a>
+                    <a href="#/product/{{item.sku}}"><h4 class="name">{{item.name}}</h4></a>
+                    <p>{{item.price | currency}}</p>   
                 </div>
             </div>
         </div>
@@ -45,11 +41,10 @@
     <div class="container">
         <div ng-controller="StoreController as store">
             <div ng-repeat="chunk in store.items" class="row">
-                <div ng-repeat="item in chunk" class="col-sm-3">
-                    <img ng-src="{{item.images[0].full}}" class="img" />
-                    <ngcart-addtocart id="{{item.name}}" name="{{item.name}}" price="{{item.price}}">Add to Cart</ngcart-addtocart>
+                <div ng-repeat="item in chunk" class="col-sm-3 chunk">
+                     <a href="#/product/{{item.sku}}"><img ng-src="{{item.images[0].full}}"  class="img" /></a>
+                    <a href="#/product/{{item.sku}}"><h4 class="name">{{item.name}}</h4></a>
                     <p>{{item.price | currency}}</p>
-                    <h4>{{item.name}}</h4>
                 </div>
             </div>
         </div>
