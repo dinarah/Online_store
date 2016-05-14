@@ -76,7 +76,8 @@ app.controller('MainCtrl', function ($scope, $rootScope, ngDialog, $timeout) {
     $rootScope.$on('ngDialog.templateLoading', function (e, template) {
         console.log('ngDialog template is loading: ' + template);
     });
+    
     $rootScope.$on('ngDialog.templateLoaded', function (e, template) {
         console.log('ngDialog template loaded: ' + template);
     });
-})
+});

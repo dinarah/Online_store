@@ -14,7 +14,6 @@ body {
 
 
 #topContainer {
-    background-image: url("../images/nice_4-wallpaper-1680x1050.jpg");
     height: 750px;
     background-repeat: no-repeat;
     margin-top: 60px;
@@ -76,11 +75,17 @@ body {
     color:rgb(229, 215, 215);
     font-weight: 600;
     text-align: right;  
+    text-shadow: 1px 2px 5px #000;
+    font-weight: lighter;
+    -webkit-font-smoothing: antialiased;
+}
+.carouselImage {
+    background-size: cover;
 }
 
 .imageProduct {
-  width:300px;
-  height:350px;
+  width:250px;
+  height:300px;
  
 }
 
@@ -102,7 +107,7 @@ body {
 
 }
 #secondImage {
-    margin-left: 10px;
+  margin-left: 10px;
     margin-right: 10px;
    
 }
@@ -114,11 +119,21 @@ body {
 }
     
 
-col-lg-1 {
+.col-lg-2 {
  
-   padding: 0 !important;
- 
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+    
+    
 }
+    
+.col-lg-8 {
+ 
+ padding-left: 0 !important;
+ padding-right: 0 !important;
+    
+}
+
 .subscribe {
     font-family: "Spinnaker", sans-serif;
     font-weight: 400;
@@ -175,7 +190,7 @@ col-lg-1 {
     margin-bottom: 25px;
 }
 .customerLink {
-color: rgb(157,157,157);
+    color: rgb(157,157,157);
     font-size: 15px;
     cursor: pointer;
     text-decoration: none;
@@ -221,11 +236,9 @@ max-width: 940px;
     
 }
 
-
-}
-img {
-    width: 231px;
-    height: 346px;
+Image {
+    width: 250px;
+    height: 250px;
    
 }
 .col-sm-3 {
@@ -349,3 +362,49 @@ a:active {
         button.inline {
             display: inline
         }
+.titleName {
+    margin-bottom: 30px;    
+}
+.backtoshop {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.opacity {
+    opacity: 0.5;
+    filter: alpha(opacity=40); 
+}
+.opacity:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    transition-property: opacity;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    
+}
+#text {
+  z-index: 100;
+  position:absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+ 
+  top: 350px;
+}
+
+#image
+{    
+    position:absolute;
+    left:0;
+    top:0;
+}
+.h2shop {
+    font-family: "Spinnaker", sans-serif;
+    color:rgb(229, 215, 215);
+    font-weight: 600;
+    margin-left: 20px;
+    text-shadow: 1px 2px 5px #000;
+    font-weight: lighter;
+    -webkit-font-smoothing: antialiased;
+}

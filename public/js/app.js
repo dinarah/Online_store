@@ -30,7 +30,7 @@ var jeweleries = [
         sku: "003",
         name: 'Ring "Nora"',
         price: 16.99,
-        description: '',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -43,7 +43,7 @@ var jeweleries = [
         sku: "004",
         name: 'Susanne',
         price: 17.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -56,7 +56,7 @@ var jeweleries = [
         sku: "005",
         name: 'Earrings "Julia"',
         price: 18.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -69,7 +69,7 @@ var jeweleries = [
         sku: "006",
         name: 'Earrings "Tina"',
         price: 19.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -81,9 +81,9 @@ var jeweleries = [
 
     {
         sku: "007",
-        name: 'Nina',
+        name: 'Pendant "Nina"',
         price: 20.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -96,7 +96,7 @@ var jeweleries = [
         sku: "008",
         name: 'Ring "Susanne"',
         price: 21.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -112,7 +112,7 @@ var jeweleries = [
         sku: "009",
         name: 'Ring "BetterTwo" black',
         price: 14.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -126,7 +126,7 @@ var jeweleries = [
         sku: "010",
         name: 'Ring "BetterTwo"',
         price: 15.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -139,7 +139,7 @@ var jeweleries = [
         sku: "011",
         name: 'Ring "ThreeWays"',
         price: 16.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -153,7 +153,7 @@ var jeweleries = [
         sku: "012",
         name: 'Ring "Black Cat"',
         price: 17.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -167,7 +167,7 @@ var jeweleries = [
         sku: "013",
         name: 'Ring "White Dog"',
         price: 18.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -179,9 +179,9 @@ var jeweleries = [
 
     {
         sku: "014",
-        name: '',
+        name: 'Pendant "Ring"',
         price: 19.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -194,7 +194,7 @@ var jeweleries = [
         sku: "015",
         name: 'Ring "Black Happines"',
         price: 20.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -208,7 +208,7 @@ var jeweleries = [
         sku: "016",
         name: 'Bracelette "Steel"',
         price: 21.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -222,7 +222,7 @@ var jeweleries = [
         sku: "017",
         name: 'Earrings "Lilly"',
         price: 22.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -235,7 +235,7 @@ var jeweleries = [
         sku: "018",
         name: 'Ring "Lilly"',
         price: 14.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -248,7 +248,7 @@ var jeweleries = [
         sku: "019",
         name: 'Ring "Lara"',
         price: 15.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -261,7 +261,7 @@ var jeweleries = [
         sku: "020",
         name: 'Earrings "Lara"',
         price: 16.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -274,7 +274,7 @@ var jeweleries = [
         sku: "021",
         name: 'Earrings "Marine"',
         price: 17.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -288,7 +288,7 @@ var jeweleries = [
         sku: "022",
         name: 'Ring "Marine"',
         price: 18.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -302,7 +302,7 @@ var jeweleries = [
         sku: "023",
         name: 'Pendant "Peace"',
         price: 19.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -316,7 +316,8 @@ var jeweleries = [
         sku: "024",
         name: 'Ring "Peace"',
         price: 20.99,
-        description: 'This is what we can offer to you',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
+        description: 'This is what we can offer to you.I am a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.',
         canPurchase: true,
         images: [
             {
@@ -338,7 +339,7 @@ function getProductBySku(sku) {
 }
 
 
-var app = angular.module('OnlineShop', ['ui.router', "store", "myApp", 'ngCart', "exampleDialog", 'ngDialog']);
+var app = angular.module('OnlineShop', ['ui.router', "store", "myApp", 'ngCart', "exampleDialog", 'ngDialog', "hoofdModule", 'ngRoute']);
 
 
 app.config(function ($stateProvider, $urlRouterProvider) {
@@ -350,9 +351,9 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/home",
             templateUrl: 'partials/home.html'
         })
-        .state('shop', {
-            url: "/shop",
-            templateUrl: 'partials/shop.html'
+        .state('shop_landing', {
+            url: "/shop_landing",
+            templateUrl: 'partials/shop_landing.html'
         })
         .state('customercare', {
             url: "/customercare",
@@ -379,10 +380,25 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'partials/product.html'
         })
 
-    .state('dialog', {
-        url: "/dialog",
-        templateUrl: 'partials/dialog.html'
-    })
+        .state('dialog', {
+            url: "/dialog",
+            templateUrl: 'partials/dialog.html'
+       })
+    
+        .state('shop_valerie', {
+            url: "/shop_valerie",
+            templateUrl: 'partials/shop_valerie.html'
+       })
+    
+        .state('shop_rocknroll', {
+            url: "/shop_rocknroll",
+            templateUrl: 'partials/shop_rocknroll.html'
+       })
+    
+        .state('shop_summer', {
+            url: "/shop_summer",
+            templateUrl: 'partials/shop_summer.html'
+       })
 });
 
 
@@ -425,3 +441,25 @@ app.controller('TabController', function () {
         return this.tab === checkTab;
     };
 });
+
+var app = angular.module('hoofdModule', ['ngRoute']);
+
+    app.controller('indexController', function ($scope, $window) {
+        $scope.$on('$viewContentLoaded', function () {
+            $window.scrollTo(0, 0);
+        });
+    });
+
+.run(function($anchorScroll, $window) {
+  // hack to scroll to top when navigating to new URLS but not back/forward
+  var wrap = function(method) {
+    var orig = $window.window.history[method];
+    $window.window.history[method] = function() {
+      var retval = orig.apply(this, Array.prototype.slice.call(arguments));
+      $anchorScroll();
+      return retval;
+    };
+  };
+  wrap('pushState');
+  wrap('replaceState');
+})

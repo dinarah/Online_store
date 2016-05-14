@@ -32,9 +32,6 @@
     <script src="js/shop.js"></script>
     <script src="js/lodash.js"></script>
     <script src="https://cdn.rawgit.com/snapjay/ngCart/0.0.3-rc.2/dist/ngCart.js"></script>
-    <script>
-        window.angular || document.write('<script src="js/angular.min.js">\x3C/script>')
-    </script>
     <script src="js/ngDialog.min.js"></script>
 
 </head>
@@ -63,7 +60,7 @@
                                 </li>
                                 
                                 <li ng-class="{ active: tab.isSelected(2) }" class="li">
-                                    <a ng-click="tab.selectTab(2)" href="#/shop" class="transition">SHOP</a>
+                                    <a ng-click="tab.selectTab(2)" href="#/shop_landing" class="transition">SHOP</a>
                                 </li>
                                 
                                 <li ng-class="{ active: tab.isSelected(3) }" class="li">
@@ -86,9 +83,9 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <ui-view autoscroll='true' />
+            <ui-view />
         </div>
     </div>
     <footer class="footer navbar-fixed-bottom">
@@ -130,11 +127,10 @@
     <script src="https://cdn.rawgit.com/snapjay/ngCart/0.0.3-rc.2/dist/ngCart.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        window.angular || document.write('<script src="js/angular.min.js">\x3C/script>')
-    </script>
+   
 
-
+    
+    
 </body>
 
 </html>
