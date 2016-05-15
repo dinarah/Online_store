@@ -339,7 +339,7 @@ function getProductBySku(sku) {
 }
 
 
-var app = angular.module('OnlineShop', ['ui.router', "store", "myApp", 'ngCart', "exampleDialog", 'ngDialog', "hoofdModule", 'ngRoute']);
+var app = angular.module('OnlineShop', ['ui.router', "store", "myApp", 'ngCart', "exampleDialog", 'ngDialog']);
 
 
 app.config(function ($stateProvider, $urlRouterProvider) {
@@ -359,9 +359,9 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/customercare",
             templateUrl: 'partials/customercare.html'
         })
-        .state('blog', {
-            url: "/blog",
-            templateUrl: 'partials/blog.html'
+        .state('lookbook', {
+            url: "/lookbook",
+            templateUrl: 'partials/lookbook.html'
         })
         .state('aboutus', {
             url: "/aboutus",
@@ -442,24 +442,4 @@ app.controller('TabController', function () {
     };
 });
 
-var app = angular.module('hoofdModule', ['ngRoute']);
 
-    app.controller('indexController', function ($scope, $window) {
-        $scope.$on('$viewContentLoaded', function () {
-            $window.scrollTo(0, 0);
-        });
-    });
-
-.run(function($anchorScroll, $window) {
-  // hack to scroll to top when navigating to new URLS but not back/forward
-  var wrap = function(method) {
-    var orig = $window.window.history[method];
-    $window.window.history[method] = function() {
-      var retval = orig.apply(this, Array.prototype.slice.call(arguments));
-      $anchorScroll();
-      return retval;
-    };
-  };
-  wrap('pushState');
-  wrap('replaceState');
-})

@@ -215,6 +215,16 @@ body {
     font-size: 17px;
       text-align: center;
 }
+.lookbookPar {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.lookbookPic {
+    margin-bottom: 50px;
+}
+
 .look {
     text-align: center;
     margin-top: 50px;

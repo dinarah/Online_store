@@ -68,7 +68,7 @@
                                 </li>
 
                                 <li ng-class="{ active: tab.isSelected(4) }" class="li">
-                                    <a ng-click="tab.selectTab(4)" href="#/blog" class="transition">BLOG</a>
+                                    <a ng-click="tab.selectTab(4)" href="#/lookbook" class="transition">LOOKBOOK</a>
                                 </li>
 
                                 <li ng-class="{ active: tab.isSelected(5) }" class="li">
@@ -127,7 +127,21 @@
     <script src="https://cdn.rawgit.com/snapjay/ngCart/0.0.3-rc.2/dist/ngCart.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-   
+   <script>
+    .run(function($anchorScroll, $window) {
+  // hack to scroll to top when navigating to new URLS but not back/forward
+  var wrap = function(method) {
+    var orig = $window.window.history[method];
+    $window.window.history[method] = function() {
+      var retval = orig.apply(this, Array.prototype.slice.call(arguments));
+      $anchorScroll();
+      return retval;
+    };
+  };
+  wrap('pushState');
+  wrap('replaceState');
+})
+    </script>
 
     
     
