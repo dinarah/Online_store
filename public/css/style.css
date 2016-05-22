@@ -12,25 +12,19 @@ body {
  
 }
 
-
 #topContainer {
     height: 750px;
     background-repeat: no-repeat;
     margin-top: 60px;
     margin-bottom: 50px;
-    background-size: cover;
-    
+    background-size: cover;   
 }
 
-
 #seeMoreButton {
-    background-color:rgb(229, 215, 215);
-    width:140px;
-    height:35px;
-    float: none;
-    border-radius: 0;
-    margin-top: 6px;
-    
+    color: white;
+    border-color: white;
+    background: rgba(0,0,0,0.25);
+    text-shadow: 1px 2px 5px #000;    
 }
 
 .brandName {
@@ -42,7 +36,9 @@ body {
     transition-duration: 0.4s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    margin-top: 7px;
 }
+
 .transition {
     color: rgb(229, 215, 215);
     transition-property: color;
@@ -50,9 +46,10 @@ body {
     transition-timing-function: ease;
     transition-delay: 0s;
 }
+
 .navbar-inverse { 
     background-repeat: no-repeat;
-    height: 60px;
+    height: 70px;
     width: 100%; 
 }
 
@@ -68,6 +65,7 @@ body {
     transition-duration: 0.4s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    margin-top: 10px;
 }
 
 .h2 {
@@ -80,13 +78,16 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 .carouselImage {
-    background-size: cover;
+    background-size: cover;  
+}
+
+.carousel-inner {
+    margin-top: 10px;
 }
 
 .imageProduct {
-  width:250px;
-  height:300px;
- 
+   width:250px;
+   height:300px; 
 }
 
 #ourBestsellers {
@@ -96,6 +97,7 @@ body {
     margin-bottom: 45px;
     margin-top: 50px;
 }
+
 #ourBlog {
     font-family: "Spinnaker", sans-serif;
     font-weight: 400;
@@ -111,6 +113,7 @@ body {
     margin-right: 10px;
    
 }
+
 #thirdImage {}
     
 .blog {
@@ -120,11 +123,8 @@ body {
     
 
 .col-lg-2 {
- 
   padding-left: 0 !important;
   padding-right: 0 !important;
-    
-    
 }
     
 .col-lg-8 {
@@ -195,6 +195,7 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
+
 .white, .white a {
   color: rgb(157,157,157);
     font-size: 25px;
@@ -211,10 +212,12 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .custPar {
     font-size: 17px;
       text-align: center;
 }
+
 .lookbookPar {
     font-size: 17px;
     text-align: center;
@@ -266,10 +269,11 @@ Image {
 .checkout {
     margin-bottom: 70px;
 }
+
 #glyph {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 30px;
-    color:rgb(157,157,157);
+    color: rgb(157,157,157);
 }
 .material-icons {
   font-family: 'Material Icons';
@@ -300,12 +304,12 @@ Image {
   font-feature-settings: 'liga';
 }
 
-.imgproduct {
-    
+.imgproduct {   
 width: 500px;
 height: 480px;
 margin-bottom: 50px;
 }
+
 #productPage {
     margin-bottom: 50px;
     margin-top: 70px;
@@ -323,6 +327,7 @@ margin-bottom: 50px;
     text-align: center;
     font-weight: 400;
     padding: 15px 20px;
+    color: white;
 }
 .btn-sm:hover {
    color: white !important;
@@ -345,15 +350,16 @@ a {
     color: inherit;
 }
 
-a:hover 
-{
+a:hover {
      color: rgba(48,49,50,1); 
      text-decoration:none; 
-     cursor:pointer;  
+     cursor:pointer;    
 }
+
 a:active {
     color: rgb(157,157,157);
 }
+
 .name {
     font-size:20px;
     margin-top: 10px;
@@ -384,7 +390,7 @@ a:active {
     opacity: 0.5;
     filter: alpha(opacity=40); 
 }
-.opacity:hover {
+ .opacity:hover {
     opacity: 1.0;
     filter: alpha(opacity=100);
     transition-property: opacity;
@@ -397,15 +403,13 @@ a:active {
   z-index: 100;
   position:absolute;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
- 
-  top: 350px;
+  top: 380px;
 }
 
 #image
-{    
-    position:absolute;
+{    margin-bottom: 30px;
     left:0;
     top:0;
 }
@@ -417,4 +421,13 @@ a:active {
     text-shadow: 1px 2px 5px #000;
     font-weight: lighter;
     -webkit-font-smoothing: antialiased;
+}
+
+#titleShop {
+  z-index: 100;
+  position:absolute;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  top: 300px;  
 }

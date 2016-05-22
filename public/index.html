@@ -128,7 +128,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
    <script>
-    .run(function($anchorScroll, $window) {
+    (function($anchorScroll, $window) {
   // hack to scroll to top when navigating to new URLS but not back/forward
   var wrap = function(method) {
     var orig = $window.window.history[method];
