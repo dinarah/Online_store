@@ -222,6 +222,7 @@ body {
     font-size: 17px;
     text-align: center;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .lookbookPic {
@@ -265,7 +266,9 @@ Image {
     border-radius: 0 !important;
     border-color: none;  
 }
-
+.btn:hover {
+   color: white !important;
+}
 .checkout {
     margin-bottom: 70px;
 }
@@ -305,8 +308,7 @@ Image {
 }
 
 .imgproduct {   
-width: 500px;
-height: 480px;
+
 margin-bottom: 50px;
 }
 
@@ -327,7 +329,7 @@ margin-bottom: 50px;
     text-align: center;
     font-weight: 400;
     padding: 15px 20px;
-    color: white;
+    color: white !important;
 }
 .btn-sm:hover {
    color: white !important;
@@ -431,3 +433,101 @@ a:active {
   font-weight: bold;
   top: 300px;  
 }
+
+/*Responsive*/
+
+@media (max-width: 1024px)  {
+
+ .li {
+    margin-left: 0px;
+    margin-right: 0px; 
+ }
+   
+.footer {
+    width: 100%;
+    position: relative;
+    clear: both;
+    height: auto;
+    padding-top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+    
+.brand {
+    width: auto;
+    float: none;    
+}
+.navbar-inverse { 
+   
+    height: 100px;
+    
+}   
+    }
+
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .li {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+ }
+.navbar-inverse { 
+    height: 70px;    
+} 
+    
+ #glyph  {
+    margin-top: 0px;
+    margin-left: 0px; 
+    margin-bottom: 15px;
+ }
+    .navbar-collapse {
+    background-color: rgba(48,49,50,1); 
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+ .navbar-inverse { 
+   
+    height: 100px;    
+ }   
+  .li {
+    margin-left: 0px;
+    margin-right: 0px;
+ }    
+}
+
+@media (min-width: 767px) {
+    .navbar-inverse { 
+    height: 100px;
+}
+    
+.li { 
+    margin-bottom: 15px;    
+ }   
+    .navbar-collapse {
+    background-color: none; 
+}
+}   
+
+@media (min-width: 1024px) {
+    .navbar-inverse { 
+    height: 70px;
+}  
+   } 
+
+@media (min-width: 1400px) {
+    .navbar-inverse { 
+    height: 70px;
+   }  
+} 
+
+@media (max-width: 1200px) and (min-width: 1024px)  {
+    
+    .li {  
+    margin-left: 0px;
+    margin-right: 0px;
+ }    
+}
+
+

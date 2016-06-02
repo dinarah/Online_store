@@ -43,18 +43,17 @@
             <div class="navbar-inner">
                 <div class="container">
                     <div class="navbar-header">
-                    </div>
+                    <a class="navbar-brand brandName" href="#/home">Biju For You</a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand brandName" href="#/home">Biju For You</a>
+                     </div>
                     <div class="navbar-collapse collapse" ng-controller="TabController as tab">
                         <section ng-init="tab= tab.isSelected">
-                            <ul class="nav pull-center navbar-nav menu" role="tablist">
-                                
+                            <ul class="nav pull-center navbar-nav menu" role="tablist">  
                                 <li ng-class="{ active: tab.isSelected(1) }" class="li">
                                     <a ng-click="tab.selectTab(1)" href="#/home" class="transition">HOME</a>
                                 </li>
@@ -72,9 +71,7 @@
                                 </li>
 
                                 <li ng-class="{ active: tab.isSelected(5) }" class="li">
-                                    <a ng-click="tab.selectTab(5)" href="#/aboutus" class="transition">ABOUT US</a>
-                                </li>
-
+                                    <a ng-click="tab.selectTab(5)" href="#/aboutus" class="transition">ABOUT US</a> </li>
                             </ul>
                         </section>
                         <a href="#/store"> <i class="fa fa-shopping-bag fa-2x" id="glyph"></i></a>
@@ -142,7 +139,13 @@
   wrap('replaceState');
 })
     </script>
-
+ <script>
+        $(document).on('click', '.navbar-collapse.in', function (e) {
+            if ($(e.target).is('a')) {
+                $(this).collapse('hide');
+            }
+        });
+    </script>
     
     
 </body>
